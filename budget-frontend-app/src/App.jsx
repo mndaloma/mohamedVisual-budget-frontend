@@ -5,13 +5,22 @@ import {
 //Routes
 import Dashboard, { dasboardLoader } from "./pages/Dashboard";
 import Error from "./pages/error";
+import Main, { mainLoader } from "./layouts/Main";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Dashboard />,
-    loader: dasboardLoader,
-    errorElement: <Error />
+    element: <Main />,
+    loader: mainLoader,
+    errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <Dashboard />,
+        loader: dasboardLoader,
+        errorElement: <Error />
+      },
+    ]
   },
 ]);
 
