@@ -5,7 +5,10 @@ import {
 //Routes
 import Dashboard, { dasboardLoader } from "./pages/Dashboard";
 import Error from "./pages/error";
+//layouts
 import Main, { mainLoader } from "./layouts/Main";
+//Actions
+import { logoutAction } from "./action/Logout";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +23,10 @@ const router = createBrowserRouter([
         loader: dasboardLoader,
         errorElement: <Error />
       },
+      {
+        path: "logout",
+        action: logoutAction
+      }
     ]
   },
 ]);
