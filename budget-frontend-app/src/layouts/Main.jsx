@@ -18,7 +18,6 @@ const Main = () => {
     return (
         <div className="layout">
             <Nav userName={userName}/>
-            <h1>main</h1>
             <main>
             <Outlet />
             </main>
