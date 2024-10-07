@@ -10,7 +10,7 @@ const Intro = () => {
                     Financial literacy begins <span className="accent">with just a steps.</span>
                 </h1>
                 <p>
-                    Good money management is the secret to financial literacy
+                    Good money management is the secret to financial literacy.
                 </p>
                 <Form method="post">
                     <input type="text" 
