@@ -4,7 +4,7 @@ import { useLoaderData } from "react-router-dom";
 import { fetchData } from "../helpers"
 
 //creating loader function
-export function dasboardLoader(){
+export function dashboardLoader(){
     const userName = fetchData("userName");
     return { userName }
 }
