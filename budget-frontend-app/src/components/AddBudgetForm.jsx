@@ -50,7 +50,8 @@ const AddBudgetForm = () => {
                 <button type="submit" className="btn btn-dark" disabled={isSubmitting}>
                     {
                         isSubmitting ? <span>Submitting...</
-                        span> : (<>
+                        span> : (
+                        <>
                         <span>Create budget</span>
                         <CurrencyDollarIcon width={20} />
                         </>
