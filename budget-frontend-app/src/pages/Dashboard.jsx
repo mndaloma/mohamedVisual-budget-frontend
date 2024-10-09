@@ -1,7 +1,7 @@
 //React router dom import rrd
 import { useLoaderData } from "react-router-dom";
 //helper function
-import { createBudget, fetchData } from "../helpers"
+import { createBudget, fetchData, waiting } from "../helpers"
 import Intro from "../components/Intro";
 //library imports for toastify
 import { toast } from "react-toastify";
@@ -14,7 +14,10 @@ export function dashboardLoader(){
     return { userName, budgets }
 }
 
+//Action to submit
 export async function dashboardAction({request}) {
+    await waiting();
+    
     const data = await request.formData();
     const {_action, ...values} = Object.fromEntries(data)
 
