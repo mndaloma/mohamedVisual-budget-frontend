@@ -1,6 +1,6 @@
 //assets
 import { Form, NavLink } from "react-router-dom"; //rrd imports
-import logo from "../assets/logo.svg";
+import website_img from "../assets/website_img.png";
 
 //heroicons library import
 import { TrashIcon } from "@heroicons/react/24/solid"
@@ -12,7 +12,7 @@ const Nav = ({userName}) => {
            to="/"
            aria-label="Go to home page"
            >
-           <img src={logo} alt="" height={30}/>
+           <img src={website_img} alt="" height={30}/>
            <span>Budget Frontend</span>
            </NavLink>
            {
@@ -27,7 +27,7 @@ const Nav = ({userName}) => {
                 }} 
                 >
                     <button type="submit" className="btn btn--warning">
-                        <span>Delete User</span>
+                        <span>Delete Account</span>
                         <TrashIcon width={20} />
                     </button>
 
