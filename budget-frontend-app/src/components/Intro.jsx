@@ -1,6 +1,6 @@
 import { Form } from "react-router-dom"
 import { UserPlusIcon } from "@heroicons/react/24/solid"
-import illustration from "../assets/illustration.jpg";
+import growth from "../assets/growth.jpg";
 
 const Intro = () => {
     return (
@@ -29,7 +29,7 @@ const Intro = () => {
                     </button>
                 </Form>
             </div>
-            <img src={illustration} alt="Climbing the ladder" />
+            <img src={growth} alt="Climbing the ladder" />
         </div>
     )
 }
