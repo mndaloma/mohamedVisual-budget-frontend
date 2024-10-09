@@ -1,3 +1,4 @@
+// The logout.js file handles the deletion of account and message relayed after such action
 import { redirect } from "react-router-dom";
 
 //import helpers to handle import
