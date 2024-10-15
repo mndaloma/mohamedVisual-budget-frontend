@@ -49,7 +49,7 @@ svg {
   --round-full: 100vmax;
 
   /* toast customizations */
-  --toastify-color-success: hsl(var(--accent));
+  --toastify-color-success: hsl(var(--accent) / 0.2);
 }
 
 body {
